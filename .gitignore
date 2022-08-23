@@ -348,3 +348,14 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Web Shtorm
+.idea
+
+# Prepros
+prepros.config
+
+#Saas
+node_modules
+dist
+.parcel-cache
