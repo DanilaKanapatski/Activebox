@@ -1,0 +1,21 @@
+$gray: #6C7279;
+$boldgray: #808080;
+$dark: #2D3033;
+$white: #FFFFFF;
+$black: #000000;
+$red: #FF4343;
+
+body {
+    font-family: 'Raleway';
+}
+
+.container {
+    max-width: 280px;
+    margin: 0 auto;
+        @media (min-width:1024px) {
+        max-width: 984px;
+        }
+        @media (min-width:1510px) {
+        max-width: 1170px;
+        }
+}

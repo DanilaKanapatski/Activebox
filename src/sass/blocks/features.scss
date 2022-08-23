@@ -1,0 +1,95 @@
+.features-block {
+    margin-top: 40px;
+    
+    .features-list {
+        display: grid;
+        gap: 41.46px;
+
+        .features-list__title-wrapper {
+            padding-top: 109.5px;
+            position: relative;
+            width: 100%;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 75.75px;
+                height: 75.75px;
+                top: 0;
+                left: calc(((280 - 75.75) / 2) / 280 * 100%);
+                background-image: url(../img/icons/features__icon1.svg);
+                background-size: cover;
+            }
+
+            .features-list__item-title {
+                font-family: 'Raleway';
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $dark;
+            }
+
+        }
+
+        .icon2::after {
+            background-image: url(../img/icons/features__icon2.svg);
+        }
+
+        .icon3::after {
+            background-image: url(../img/icons/features__icon3.svg);
+        }
+
+        .icon4::after {
+            background-image: url(../img/icons/features__icon4.svg);
+        }
+
+        .icon5::after {
+            background-image: url(../img/icons/features__icon5.svg);
+        }
+
+        .icon6::after {
+            background-image: url(../img/icons/features__icon6.svg);
+        }
+        
+        .features-list__item-desc {
+            margin-top: 12.5px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: $gray;
+        }
+    }
+    
+    @media (min-width:1024px) {
+        margin-top: 78px;
+
+        .features-list {
+            display: grid;
+            grid-template-columns: 314px 314px 314px;
+            gap: 49.84px 20px;
+
+            .features-list__title-wrapper {
+                padding-top: 109.5px;
+                position: relative;
+                width: 100%;
+                &::after {
+                    width: 85px;
+                    height: 85px;
+                    
+                    left: calc(((314 - 85) / 2) / 314 * 100%);
+               
+                }
+            }
+            
+            .features-list__item-desc {
+                margin-top: 23.725px;
+            }
+    }
+        @media (min-width:1510px) {
+        margin-top: 116px;
+    }
+}
+
+}
