@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- Подключаем CSS -->
-    <link rel="stylesheet" href="sass/main.scss" npn> 
+    <link rel="stylesheet" href="sass/main.scss" > 
     <!-- Кодировка страницы -->
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,16 +90,55 @@
             </div>
         </section>
     </main>
-    <footer>
-        <section>
+    <footer class="footer-block">
+        <div class="footer-block__about about">
+            <div class="container">   
+               <div class="footer-block__wrapper">
+                    <div class="about__location">
+                        <h2 class="about__location-title subtitle">
+                            Location
+                        </h2>  
+                        <p class="about__location-desc desc">
+                            3481 Melrose Place 
+                            Beverly Hills, CA 90210
+                        </p>
+                    </div>
+                    <div class="about__social">
+                        <h2 class="about__social-title subtitle">
+                            Share with Love
+                        </h2>
+                       <ul class="about__social-list about-list">      
+                            <li class="about__list__item">
+                                <img class="about__list__item-img1" src="./img/icons/facebook__icon.svg" alt="facebook__icon" width="7.9px" height="15.23px">
+                            </li>
+                            <li class="about__list__item">
+                                <img class="about__list__item-img2" src="./img/icons/twitter__icon.svg" alt="twitter__icon" width="16.63px" height="13.51px">
+                            </li>
+                            <li class="about__list__item">
+                                <img class="about__list__item-img3" src="./img/icons/linkedin__icon.svg" alt="linkedin__icon" width="15.23px" height="15.23px">
+                            </li>
+                       </ul> 
+                    </div>
+                    <div class="about__activebox">
+                        <h2 class="about__activebox-title subtitle">
+                            About ActiveBox
+                        </h2>
+                        <p class="about__activebox-desc desc">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        </section>
-        <section class="copyright-block">
-            <p>
-                Copyright © 2015 ActiveBox. All Rights Reserved
-                Made with by Kamal Chaneman
-            </p>
-        </section>
+        <div class="footer-block__copyright copyright">
+            <div class="container">
+                <p class="copyright__desc desc">
+                    Copyright © 2015 ActiveBox. All Rights Reserved
+                    Made with <span>by Kamal Chaneman</span>
+                </p> 
+            </div>
+        </div>
     </footer>
 </body>
 

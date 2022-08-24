@@ -19,3 +19,31 @@ body {
         max-width: 1170px;
         }
 }
+
+.subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+
+    @media (min-width:1510px) {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $white;
+
+    @media (min-width:1510px) {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
