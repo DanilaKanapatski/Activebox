@@ -1,0 +1,112 @@
+.testimonials-block {
+    margin-top: 34.39px;
+
+    .testimonials-block__wrapper {
+        background:#5C3249;
+
+        .testimonials-block__image {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .testimonials-block__text-wrapper {
+            padding: 23px 0 100.5px;
+
+            .testimonials-block__title {
+                font-family: 'Cardo';
+                font-style: italic;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+                text-align: center;
+                text-transform: capitalize;
+                color: $white;
+            }
+
+            .testimonials-block__desc {
+                margin-top: 28.5px;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+    }
+
+    .testimonials-block__dots {
+        margin: 22.5px auto 0;
+        width: calc(129.49 / 280 * 100%);
+        display: flex;
+        justify-content: space-between;
+
+        .testimonials-block__dot {
+            width: 10px;
+            height: 10px;
+            border: 1px solid #7E5D6F;
+            border-radius: 50%;
+            background-color: transparent;
+
+            &--active {
+            background: #7E5D6F;
+            }
+        }
+    }
+
+    @media (min-width:1024px) {
+        margin-top: 78.41px;
+
+        .testimonials-block__wrapper {
+            display: flex;
+    
+            .testimonials-block__text-wrapper {
+                padding: 61px 104px 112.57px 88px;
+                
+                .testimonials-block__title {
+                    width: 330px;
+                    text-align: left;
+                }
+
+                .testimonials-block__desc {
+                    margin-top: 16.5px;
+                }
+            }
+        }
+    
+        .testimonials-block__dots {
+            margin: 23.43px auto 0;
+            width: calc(149.49 / 984 * 100%);
+        }
+    }
+
+    @media (min-width:1510px) {
+        margin-top: 114px;
+
+            .testimonials-block__text-wrapper {
+                padding: 61px 104px 112.57px 88px;
+                
+                .testimonials-block__title {
+                    width: 471px;
+                    font-size: 36px;
+                    line-height: 49px;
+                }
+
+                .testimonials-block__desc {
+                    margin-top: 16.5px;
+                    font-size: 13px;
+                    line-height: 15px;
+                }
+            }
+
+            .testimonials-block__dots {
+                margin: 31px auto 0;
+                width: calc(170 / 1170 * 100%);
+    
+                .testimonials-block__dot {
+                    width: 14px;
+                    height: 14px;
+            }
+        }
+    }
+}
+
