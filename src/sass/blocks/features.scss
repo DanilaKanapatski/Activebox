@@ -21,7 +21,6 @@
             }
 
             .features-list__item-title {
-                font-family: 'Raleway';
                 font-weight: 900;
                 font-size: 18px;
                 line-height: 21px;
@@ -61,35 +60,56 @@
             color: $gray;
         }
     }
-    
+
     @media (min-width:1024px) {
         margin-top: 78px;
 
         .features-list {
-            display: grid;
             grid-template-columns: 314px 314px 314px;
             gap: 49.84px 20px;
 
             .features-list__title-wrapper {
-                padding-top: 109.5px;
-                position: relative;
-                width: 100%;
+                padding-top: 128.265px;
                 &::after {
                     width: 85px;
                     height: 85px;
-                    
                     left: calc(((314 - 85) / 2) / 314 * 100%);
-               
                 }
             }
             
             .features-list__item-desc {
                 margin-top: 23.725px;
             }
+        }
     }
-        @media (min-width:1510px) {
+    
+    @media (min-width:1510px) {
         margin-top: 116px;
-    }
-}
 
+        .features-list {
+            grid-template-columns: 370px 370px 370px;
+            gap: 88.57px 30px;
+    
+            .features-list__title-wrapper {
+                padding-top: 151px;
+                &::after {
+                    width: 100px;
+                    height: 100px;
+                    left: calc(((370 - 100) / 2) / 370 * 100%);
+                }
+    
+                .features-list__item-title {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+    
+            }
+            
+            .features-list__item-desc {
+                margin-top: 42.43px;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+    }
 }
