@@ -1,0 +1,136 @@
+.team-block {
+    margin-top: 35px;
+
+    .team-block__list {
+        display: flex;
+        flex-direction: column;
+        gap: 49.39px;
+
+        .team-list__item-title {
+            margin-top: 27.275px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: capitalize;
+            color: $dark;
+        }
+
+        .team-list__item-subtitle {
+            margin-top: 6.735px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: $red;
+        }
+
+        .team-list__item-decs {
+            margin-top: 38.49px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray;
+        }
+
+        .team-list__item-links {
+            margin-top: 55.15px;
+            display: flex;
+            gap: 5.585px;
+
+            .team-list__item-link {
+                width: 39.61px;
+                height: 39.61px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $lightgray;
+                cursor: pointer; 
+            }
+        }
+    }
+
+    @media (min-width:1024px) { 
+        margin-top: 78.22px;
+
+        .team-block__list {
+            flex-direction: row;
+            gap: 25.257px;
+            width: calc(227.08 / 984 * 100%);
+
+            .team-list__item-title {
+                margin-top: 27.345px;
+            }
+
+            .team-list__item-subtitle {
+                margin-top: 6.715px;
+            }
+
+            .team-list__item-decs {
+                margin-top: 22.45px;
+            }
+
+            .team-list__item-links {
+                margin-top: 39.2px;
+                gap: 4.63px;
+
+                .team-list__item-link {
+                    width: 32.8px;
+                    height: 32.8px;
+
+                    .team__list__item-icon1 {
+                        width: 25%;
+                        height: 50%;
+                    }
+
+                    .team__list__item-icon2 {
+                        width: 53%;
+                        height: 43%;
+                    }
+
+                    .team__list__item-icon3 {
+                        width: 50%;
+                        height: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width:1510px) { 
+        margin-top: 114px;
+
+        .team-block__list {
+            gap: 30px;
+            width: calc(270 / 1170 * 100%);
+
+            .team-list__item-title {
+                margin-top: 31px;
+                font-size: 24px;
+                line-height: 28px;
+            }
+    
+            .team-list__item-subtitle {
+                margin-top: 6.29px;
+                font-size: 18px;
+                line-height: 21px;
+            }
+    
+            .team-list__item-decs {
+                margin-top: 17.86px;
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            .team-list__item-links {
+                margin-top: 37.86px;
+                gap: 5.5px;
+
+                .team-list__item-link {
+                    width: 39px;
+                    height: 39px;
+
+                }
+            }
+        }
+    }
+}
