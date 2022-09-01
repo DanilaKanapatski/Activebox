@@ -32,6 +32,16 @@
         color: $white;
         background: $red;
         word-break: break-word;
+
+        &:hover {
+            background: #E71414;
+            transition: 0.5s;
+        }
+
+        &:active {
+            background: #FF4343;
+            box-shadow: 4px 4px 30px #FF4343;
+        }
     }
 
     @media (min-width:1024px) {
